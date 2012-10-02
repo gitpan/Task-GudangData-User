@@ -1,21 +1,21 @@
 package Task::GudangData::User;
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 1;
-# ABSTRACT: SHARYANTO's patch modules
+# ABSTRACT: Modules which use data from gudangdata.org
 
 __END__
 =pod
 
 =head1 NAME
 
-Task::GudangData::User - SHARYANTO's patch modules
+Task::GudangData::User - Modules which use data from gudangdata.org
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 
@@ -26,15 +26,13 @@ as data source.
 
 =head2 Included modules
 
-=head3 L<HTTP::Daemon::Patch::IPv6>
+=head3 L<Business::BankCard::Indonesia>
 
-=head3 L<LWP::UserAgent::Patch::HTTPSHardTimeout>
+=head3 L<Business::BankList::Indonesia>
 
-=head3 L<LWP::UserAgent::Patch::LogResponse>
+=head3 L<Locale::ID::Locality>
 
-=head3 L<Net::HTTP::Methods::Patch::LogRequest>
-
-=head3 L<UUID::Random::Patch::UseMRS>
+=head3 L<Locale::ID::Province>
 
 =head1 AUTHOR
 

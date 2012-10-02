@@ -1,5 +1,5 @@
 ---
-abstract: "SHARYANTO's patch modules"
+abstract: 'Modules which use data from gudangdata.org'
 author:
   - 'Steven Haryanto <stevenharyanto@gmail.com>'
 build_requires:
@@ -14,12 +14,11 @@ meta-spec:
   version: 1.4
 name: Task-GudangData-User
 requires:
-  HTTP::Daemon::Patch::IPv6: 0
-  LWP::UserAgent::Patch::HTTPSHardTimeout: 0
-  LWP::UserAgent::Patch::LogResponse: 0
-  Net::HTTP::Methods::Patch::LogRequest: 0
-  UUID::Random::Patch::UseMRS: 0
+  Business::BankCard::Indonesia: 0
+  Business::BankList::Indonesia: 0
+  Locale::ID::Locality: 0
+  Locale::ID::Province: 0
 resources:
   homepage: http://metacpan.org/release/Task-GudangData-User
   repository: http://github.com/sharyanto/perl-Task-GudangData-User
-version: 0.01
+version: 0.02

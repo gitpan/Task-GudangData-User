@@ -12,22 +12,21 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.3601"
   },
-  "dist_abstract" => "SHARYANTO's patch modules",
+  "dist_abstract" => "Modules which use data from gudangdata.org",
   "dist_author" => [
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Task-GudangData-User",
-  "dist_version" => "0.01",
+  "dist_version" => "0.02",
   "license" => "perl",
   "module_name" => "Task::GudangData::User",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "HTTP::Daemon::Patch::IPv6" => 0,
-    "LWP::UserAgent::Patch::HTTPSHardTimeout" => 0,
-    "LWP::UserAgent::Patch::LogResponse" => 0,
-    "Net::HTTP::Methods::Patch::LogRequest" => 0,
-    "UUID::Random::Patch::UseMRS" => 0
+    "Business::BankCard::Indonesia" => 0,
+    "Business::BankList::Indonesia" => 0,
+    "Locale::ID::Locality" => 0,
+    "Locale::ID::Province" => 0
   },
   "script_files" => []
 );

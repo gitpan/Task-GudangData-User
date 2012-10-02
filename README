@@ -1,8 +1,8 @@
 NAME
-    Task::GudangData::User - SHARYANTO's patch modules
+    Task::GudangData::User - Modules which use data from gudangdata.org
 
 VERSION
-    version 0.01
+    version 0.02
 
 DESCRIPTION
     This task will install all modules which use data from
@@ -10,11 +10,10 @@ DESCRIPTION
 
 TASK CONTENTS
   Included modules
-   HTTP::Daemon::Patch::IPv6
-   LWP::UserAgent::Patch::HTTPSHardTimeout
-   LWP::UserAgent::Patch::LogResponse
-   Net::HTTP::Methods::Patch::LogRequest
-   UUID::Random::Patch::UseMRS
+   Business::BankCard::Indonesia
+   Business::BankList::Indonesia
+   Locale::ID::Locality
+   Locale::ID::Province
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
 
