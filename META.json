@@ -1,0 +1,46 @@
+{
+   "abstract" : "SHARYANTO's patch modules",
+   "author" : [
+      "Steven Haryanto <stevenharyanto@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Task-GudangData-User",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "HTTP::Daemon::Patch::IPv6" : 0,
+            "LWP::UserAgent::Patch::HTTPSHardTimeout" : 0,
+            "LWP::UserAgent::Patch::LogResponse" : 0,
+            "Net::HTTP::Methods::Patch::LogRequest" : 0,
+            "UUID::Random::Patch::UseMRS" : 0
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "http://metacpan.org/release/Task-GudangData-User",
+      "repository" : {
+         "url" : "http://github.com/sharyanto/perl-Task-GudangData-User"
+      }
+   },
+   "version" : "0.01"
+}
+
