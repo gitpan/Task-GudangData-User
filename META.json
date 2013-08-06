@@ -4,7 +4,7 @@
       "Steven Haryanto <stevenharyanto@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
+   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140",
    "license" : [
       "perl_5"
    ],
@@ -24,12 +24,26 @@
             "Module::Build" : "0.3601"
          }
       },
+      "develop" : {
+         "requires" : {
+            "Test::Rinci" : "0.01"
+         }
+      },
       "runtime" : {
          "requires" : {
-            "Business::BankCard::Indonesia" : 0,
-            "Business::BankList::Indonesia" : 0,
-            "Locale::ID::Locality" : 0,
-            "Locale::ID::Province" : 0
+            "Business::BankCard::Indonesia" : "0",
+            "Business::BankList::Indonesia" : "0",
+            "Business::ID::BCA" : "0",
+            "Business::ID::Mandiri" : "0",
+            "Locale::ID::Locality" : "0",
+            "Locale::ID::Province" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Capture::Tiny" : "0",
+            "Test::More" : "0.88",
+            "blib" : "0"
          }
       }
    },
@@ -40,6 +54,6 @@
          "url" : "http://github.com/sharyanto/perl-Task-GudangData-User"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

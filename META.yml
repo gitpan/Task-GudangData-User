@@ -3,11 +3,14 @@ abstract: 'Modules which use data from gudangdata.org'
 author:
   - 'Steven Haryanto <stevenharyanto@gmail.com>'
 build_requires:
+  Capture::Tiny: 0
   Module::Build: 0.3601
+  Test::More: 0.88
+  blib: 0
 configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640'
+generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,9 +19,11 @@ name: Task-GudangData-User
 requires:
   Business::BankCard::Indonesia: 0
   Business::BankList::Indonesia: 0
+  Business::ID::BCA: 0
+  Business::ID::Mandiri: 0
   Locale::ID::Locality: 0
   Locale::ID::Province: 0
 resources:
   homepage: http://metacpan.org/release/Task-GudangData-User
   repository: http://github.com/sharyanto/perl-Task-GudangData-User
-version: 0.02
+version: 0.03

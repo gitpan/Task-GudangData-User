@@ -9,4 +9,5 @@ README
 dist.ini
 lib/Task/GudangData/User.pm
 t/00-compile.t
+t/release-rinci.t
 t/task-bogus.t
