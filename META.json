@@ -4,7 +4,7 @@
       "Steven Haryanto <stevenharyanto@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170",
    "license" : [
       "perl_5"
    ],
@@ -14,14 +14,9 @@
    },
    "name" : "Task-GudangData-User",
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Module::Build" : "0.3601"
-         }
-      },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "develop" : {
@@ -36,24 +31,226 @@
             "Business::ID::BCA" : "0",
             "Business::ID::Mandiri" : "0",
             "Locale::ID::Locality" : "0",
-            "Locale::ID::Province" : "0"
+            "Locale::ID::Province" : "0",
+            "Ubuntu::Releases" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Capture::Tiny" : "0",
-            "Test::More" : "0.88",
-            "blib" : "0"
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
+            "Test::More" : "0"
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://metacpan.org/release/Task-GudangData-User",
+      "bugtracker" : {
+         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Task-GudangData-User"
+      },
+      "homepage" : "https://metacpan.org/release/Task-GudangData-User",
       "repository" : {
-         "url" : "http://github.com/sharyanto/perl-Task-GudangData-User"
+         "type" : "git",
+         "url" : "git://github.com/sharyanto/perl-Task-GudangData-User.git",
+         "web" : "https://github.com/sharyanto/perl-Task-GudangData-User"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04",
+   "x_Dist_Zilla" : {
+      "perl" : {
+         "version" : "5.018002"
+      },
+      "plugins" : [
+         {
+            "class" : "Dist::Zilla::Plugin::GatherDir",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/GatherDir",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PruneCruft",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/PruneCruft",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ManifestSkip",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/ManifestSkip",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaYAML",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/MetaYAML",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::License",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/License",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ExtraTests",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/ExtraTests",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ExecDir",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/ExecDir",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ShareDir",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/ShareDir",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MakeMaker",
+            "config" : {
+               "Dist::Zilla::Role::TestRunner" : {
+                  "default_jobs" : 1
+               }
+            },
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/MakeMaker",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Manifest",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/Manifest",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ConfirmRelease",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/ConfirmRelease",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::UploadToCPAN",
+            "name" : "@Author::SHARYANTO::Task/@Filter/@Filter/UploadToCPAN",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Author::SHARYANTO::MetaResources",
+            "name" : "@Author::SHARYANTO::Task/@Filter/Author::SHARYANTO::MetaResources",
+            "version" : "0.01"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CheckChangeLog",
+            "name" : "@Author::SHARYANTO::Task/@Filter/CheckChangeLog",
+            "version" : "0.01"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CheckMetaResources",
+            "name" : "@Author::SHARYANTO::Task/@Filter/CheckMetaResources",
+            "version" : "0.001"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaJSON",
+            "name" : "@Author::SHARYANTO::Task/@Filter/MetaJSON",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaConfig",
+            "name" : "@Author::SHARYANTO::Task/@Filter/MetaConfig",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::OurDate",
+            "name" : "@Author::SHARYANTO::Task/@Filter/OurDate",
+            "version" : "0.01"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PruneFiles",
+            "name" : "@Author::SHARYANTO::Task/@Filter/PruneFiles",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ReadmeFromPod",
+            "name" : "@Author::SHARYANTO::Task/@Filter/ReadmeFromPod",
+            "version" : "0.21"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Rinci::Validate",
+            "name" : "@Author::SHARYANTO::Task/@Filter/Rinci::Validate",
+            "version" : "0.13"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::SHARYANTO::OurPkgVersion",
+            "name" : "@Author::SHARYANTO::Task/@Filter/SHARYANTO::OurPkgVersion",
+            "version" : "0.02"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Test::Compile",
+            "config" : {
+               "Dist::Zilla::Plugin::Test::Compile" : {
+                  "filename" : "t/00-compile.t",
+                  "module_finder" : [
+                     ":InstallModules"
+                  ],
+                  "script_finder" : [
+                     ":ExecFiles"
+                  ]
+               }
+            },
+            "name" : "@Author::SHARYANTO::Task/@Filter/Test::Compile",
+            "version" : "2.040"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Test::Rinci",
+            "name" : "@Author::SHARYANTO::Task/@Filter/Test::Rinci",
+            "version" : "0.01"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::TaskWeaver",
+            "name" : "@Author::SHARYANTO::Task/TaskWeaver",
+            "version" : "0.101626"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":InstallModules",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":IncModules",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":TestFiles",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":ExecFiles",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":ShareFiles",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":MainModule",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":AllFiles",
+            "version" : "5.019"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":NoFiles",
+            "version" : "5.019"
+         }
+      ],
+      "zilla" : {
+         "class" : "Dist::Zilla::Dist::Builder",
+         "config" : {
+            "is_trial" : "0"
+         },
+         "version" : "5.019"
+      }
+   }
 }
 
